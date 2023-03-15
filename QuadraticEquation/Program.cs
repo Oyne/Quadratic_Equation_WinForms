@@ -1,4 +1,4 @@
-namespace QuadraticEquation
+namespace QuadraticEquationForm
 {
     internal static class Program
     {

@@ -1,17 +1,17 @@
 using System.Globalization;
 using QuadraticEquation;
 
-namespace QuadraticEquation
+namespace QuadraticEquationForm
 {
     public partial class Form1 : Form
     {
-        // Number of digits after decimal point
-        private int decimalNumber = 15;
+        // Number of digits after decimal point.
+        int decimalNumber = 15;
 
         // Value for checking double zero
         private double zeroEquality = 0.0000000001;
 
-        // Exception for calculating non quadratic equation
+        // Exception for calculating non quadratic equation.
         private Exception NotQuadraticEquation = new Exception("You entered not a quadratic equation");
 
         public Form1()
@@ -20,10 +20,10 @@ namespace QuadraticEquation
         }
 
         /// <summary>
-        /// Input limiter
+        /// Input limiter.
         /// </summary>
-        /// <param name="sender">TextBox</param>
-        /// <param name="e">Button pressed</param>
+        /// <param name="sender">TextBox.</param>
+        /// <param name="e">Button pressed.</param>
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Checking in input is digit or , and .
@@ -45,7 +45,7 @@ namespace QuadraticEquation
                     if (((TextBox)sender).Text.Length > 0)
                         e.KeyChar = (char)Keys.None;
                 }
-                // Restricting input of digits after 0 and -0
+                // Restricting input of digits after 0 and -0.
                 if (Char.IsDigit(e.KeyChar))
                 {
 
@@ -59,10 +59,10 @@ namespace QuadraticEquation
         }
 
         /// <summary>
-        /// Clear
+        /// Clear.
         /// </summary>
-        /// <param name="sender">Button</param>
-        /// <param name="e">Click</param>
+        /// <param name="sender">Button.</param>
+        /// <param name="e">Click.</param>
         private void clearButton_Click(object sender, EventArgs e)
         {
             aTextBox.Clear();
@@ -74,39 +74,39 @@ namespace QuadraticEquation
         }
 
         /// <summary>
-        /// Calculates quadratic equation
+        /// Calculates quadratic equation.
         /// </summary>
-        /// <param name="a">a value</param>
-        /// <param name="b">b value</param>
-        /// <param name="c">c value</param>
-        /// <returns>String array of D, x1 and x2</returns>
+        /// <param name="a">a value.</param>
+        /// <param name="b">b value.</param>
+        /// <param name="c">c value.</param>
+        /// <returns>String array of D, x1 and x2.</returns>
         private string[] quadraticEquation(double a, double b, double c)
         {
-            // Array with results of calculation
+            // Array with results of calculation.
             string[] result = new string[3];
-            // D
+            // D.
             double d = b * b - 4 * a * c;
 
-            // Checking D for calculation
+            // Checking D for calculation.
             if (d < 0)
             {
                 result[0] = "D < 0";
             }
             else if (d < zeroEquality)
             {
-                // Checking for non quadratic equation
+                // Checking for non quadratic equation.
                 if (a < zeroEquality && a == Math.Abs(a))
                     throw NotQuadraticEquation;
 
                 double x = Math.Round(-b / (2 * a), decimalNumber);
-                
+
                 result[0] = d.ToString();
                 result[1] = result[2] = x.ToString();
 
             }
             else
             {
-                // Checking for non quadratic equation
+                // Checking for non quadratic equation.
                 if (a < zeroEquality && a == Math.Abs(a))
                     throw NotQuadraticEquation;
 
@@ -160,17 +160,17 @@ namespace QuadraticEquation
             {
                 try
                 {
-                    // D
+                    // D.
                     double d = b * b - 4 * a * c;
 
-                    // Checking D for calculation
+                    // Checking D for calculation.
                     if (d < 0)
                     {
                         dTextBox.Text = "D < 0";
                     }
                     else if (d < zeroEquality)
                     {
-                        // Checking for non quadratic equation
+                        // Checking for non quadratic equation.
                         if (a < zeroEquality && a == Math.Abs(a))
                             throw NotQuadraticEquation;
 
@@ -181,7 +181,7 @@ namespace QuadraticEquation
                     }
                     else
                     {
-                        // Checking for non quadratic equation
+                        // Checking for non quadratic equation.
                         if (a < zeroEquality && a == Math.Abs(a))
                             throw NotQuadraticEquation;
 
@@ -234,10 +234,10 @@ namespace QuadraticEquation
             {
                 try
                 {
-                    QuadraticEquation equation = new QuadraticEquation(a, b, c);
+                    QuadEq equation = new QuadEq(a, b, c);
                     equation.Calculate();
 
-                    // Checking for roots
+                    // Checking for roots.
                     if (equation.D < 0)
                     {
                         dTextBox.Text = "D < 0";
