@@ -73,6 +73,7 @@
             cTextBox.ForeColor = Color.FromArgb(0, 192, 192);
             resources.ApplyResources(cTextBox, "cTextBox");
             cTextBox.Name = "cTextBox";
+            cTextBox.TabStop = false;
             cTextBox.KeyPress += TextBox_KeyPress;
             // 
             // bTextBox
@@ -81,6 +82,7 @@
             bTextBox.ForeColor = Color.FromArgb(0, 192, 192);
             resources.ApplyResources(bTextBox, "bTextBox");
             bTextBox.Name = "bTextBox";
+            bTextBox.TabStop = false;
             bTextBox.KeyPress += TextBox_KeyPress;
             // 
             // aTextBox
@@ -89,6 +91,7 @@
             aTextBox.ForeColor = Color.FromArgb(0, 192, 192);
             resources.ApplyResources(aTextBox, "aTextBox");
             aTextBox.Name = "aTextBox";
+            aTextBox.TabStop = false;
             aTextBox.KeyPress += TextBox_KeyPress;
             // 
             // cLabel
@@ -129,6 +132,7 @@
             resources.ApplyResources(dTextBox, "dTextBox");
             dTextBox.Name = "dTextBox";
             dTextBox.ReadOnly = true;
+            dTextBox.TabStop = false;
             // 
             // dLabel
             // 
@@ -143,6 +147,7 @@
             resources.ApplyResources(xSecondTextBox, "xSecondTextBox");
             xSecondTextBox.Name = "xSecondTextBox";
             xSecondTextBox.ReadOnly = true;
+            xSecondTextBox.TabStop = false;
             // 
             // xFirstTextBox
             // 
@@ -151,6 +156,7 @@
             resources.ApplyResources(xFirstTextBox, "xFirstTextBox");
             xFirstTextBox.Name = "xFirstTextBox";
             xFirstTextBox.ReadOnly = true;
+            xFirstTextBox.TabStop = false;
             // 
             // xSecondLable
             // 
@@ -181,7 +187,6 @@
             resources.ApplyResources(thirdMethodRadioButton, "thirdMethodRadioButton");
             thirdMethodRadioButton.ForeColor = Color.FromArgb(0, 192, 192);
             thirdMethodRadioButton.Name = "thirdMethodRadioButton";
-            thirdMethodRadioButton.TabStop = true;
             thirdMethodRadioButton.UseVisualStyleBackColor = true;
             // 
             // secondMethodRadioButton
@@ -189,7 +194,6 @@
             resources.ApplyResources(secondMethodRadioButton, "secondMethodRadioButton");
             secondMethodRadioButton.ForeColor = Color.FromArgb(0, 192, 192);
             secondMethodRadioButton.Name = "secondMethodRadioButton";
-            secondMethodRadioButton.TabStop = true;
             secondMethodRadioButton.UseVisualStyleBackColor = true;
             // 
             // firstMethodRadioButton
@@ -198,7 +202,6 @@
             firstMethodRadioButton.Checked = true;
             firstMethodRadioButton.ForeColor = Color.FromArgb(0, 192, 192);
             firstMethodRadioButton.Name = "firstMethodRadioButton";
-            firstMethodRadioButton.TabStop = true;
             firstMethodRadioButton.UseVisualStyleBackColor = true;
             // 
             // clearButton
@@ -207,6 +210,7 @@
             resources.ApplyResources(clearButton, "clearButton");
             clearButton.ForeColor = Color.FromArgb(0, 192, 192);
             clearButton.Name = "clearButton";
+            clearButton.TabStop = false;
             clearButton.UseVisualStyleBackColor = true;
             clearButton.Click += clearButton_Click;
             // 
@@ -216,6 +220,7 @@
             resources.ApplyResources(calculateButton, "calculateButton");
             calculateButton.ForeColor = Color.FromArgb(0, 192, 192);
             calculateButton.Name = "calculateButton";
+            calculateButton.TabStop = false;
             calculateButton.UseVisualStyleBackColor = true;
             calculateButton.Click += calculateButton_Click;
             // 
