@@ -1,4 +1,4 @@
-﻿namespace QuadraticEquation
+﻿namespace QuadraticEquationForm
 {
     partial class Form1
     {

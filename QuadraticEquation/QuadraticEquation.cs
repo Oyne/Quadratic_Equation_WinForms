@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuadraticEquation
 {
-    internal class QuadraticEquation
+    class QuadEq
     {
         // Number of digits after decimal point
         private int _decimalNumber = 15;
@@ -30,7 +30,7 @@ namespace QuadraticEquation
         /// <param name="a">a value</param>
         /// <param name="b">b value</param>
         /// <param name="c">c value</param>
-        public QuadraticEquation(double a, double b, double c)
+        public QuadEq(double a, double b, double c)
         {
             this._a = a;
             this._b = b;

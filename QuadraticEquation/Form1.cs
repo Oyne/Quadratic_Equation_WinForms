@@ -1,7 +1,7 @@
 using System.Globalization;
 using QuadraticEquation;
 
-namespace QuadraticEquation
+namespace QuadraticEquationForm
 {
     public partial class Form1 : Form
     {
@@ -99,7 +99,7 @@ namespace QuadraticEquation
                     throw NotQuadraticEquation;
 
                 double x = Math.Round(-b / (2 * a), decimalNumber);
-                
+
                 result[0] = d.ToString();
                 result[1] = result[2] = x.ToString();
 
@@ -234,7 +234,7 @@ namespace QuadraticEquation
             {
                 try
                 {
-                    QuadraticEquation equation = new QuadraticEquation(a, b, c);
+                    QuadEq equation = new QuadEq(a, b, c);
                     equation.Calculate();
 
                     // Checking for roots
