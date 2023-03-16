@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuadraticEquationForm", "QuadraticEquation\QuadraticEquationForm.csproj", "{722CC12D-9EFD-4CE3-8CF1-0A3E9495DC92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuadraticEquation", "QuadraticEquation\QuadraticEquation.csproj", "{722CC12D-9EFD-4CE3-8CF1-0A3E9495DC92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadraticEquationTest", "QuadraticEquationTest\QuadraticEquationTest.csproj", "{7235F16B-A86C-4397-9123-64F09206078D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuadraticEquationTest", "QuadraticEquationTest\QuadraticEquationTest.csproj", "{7235F16B-A86C-4397-9123-64F09206078D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

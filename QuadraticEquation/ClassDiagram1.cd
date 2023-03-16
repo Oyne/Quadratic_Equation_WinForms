@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QuadraticEquation.QuadEq">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAIAAAAUAAAAAABIAAAAKAAAAIAAAAApAEBAAA=</HashCode>
+      <FileName>QuadraticEquation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuadraticEquationForm.Form1">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="aLabel" Hidden="true" />
+      <Field Name="aTextBox" Hidden="true" />
+      <Field Name="bLabel" Hidden="true" />
+      <Field Name="bTextBox" Hidden="true" />
+      <Field Name="calculateButton" Hidden="true" />
+      <Field Name="cLabel" Hidden="true" />
+      <Field Name="clearButton" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="controlBox" Hidden="true" />
+      <Field Name="cTextBox" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dLabel" Hidden="true" />
+      <Field Name="dTextBox" Hidden="true" />
+      <Field Name="firstMethodRadioButton" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="inputBox" Hidden="true" />
+      <Field Name="resultBox" Hidden="true" />
+      <Field Name="secondMethodRadioButton" Hidden="true" />
+      <Field Name="thirdMethodRadioButton" Hidden="true" />
+      <Field Name="xFirstLable" Hidden="true" />
+      <Field Name="xFirstTextBox" Hidden="true" />
+      <Field Name="xSecondLable" Hidden="true" />
+      <Field Name="xSecondTextBox" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAwAJYAAGIFUAgAEASAgAEiAYAAgAABIAAIAAIAAEA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuadraticEquationForm.Program">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
